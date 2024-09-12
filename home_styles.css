@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Import Poppins font family from google */
+
+@keyframes navigate-text{from {color:rgba(26, 115, 249, 1.0)}
+to {color: rgba(255, 3, 12, 1.0);}}
+nav a:hover {animation-name: navigate-text;
+animation-duration:2s; 
+animation-iteration-count: infinite; 
+animation-timing-function: ease-in;}
+/* Simple text color animation for nav bar */
+
+img {border-radius: 4px;
+padding: 5px;
+border: 2px red solid;
+display: block;
+margin: auto;
+transition: opacity 2s ease-in
+}
+/* Image styling includes padding, border, rounding of image and centering image */
+img:hover {box-shadow: 3px 3px rgba(106, 104, 103, 0.45);
+opacity: 1;
+
+}
+/* Hover effects to bring image into greater focus and add slight grey shadow around image */
+h3, p, figcaption, h1, li {font-family: "Poppins", sans-serif;}
+
+nav {display: flex;
+position: fixed;
+top: 0px;
+width: 100%;
+flex-direction: row;
+justify-content: safe;
+align-items: center;
+text-align: center;
+background-color: rgba(199 , 250, 252, 0.94);
+height: 50px;
+z-index: 999;}
+ul { position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: safe;
+background-color: rgba(199 , 250, 252, 0.94);
+width: 100%;
+}
+li {padding: 10px; margin: 10px; list-style-type: none; list-style-image: url(football_logo.png); justify-content: safe;}
+a {text-decoration: none; color: rgba(26, 115, 249, 1.0)}
+/* Removes underline from nav bars */
+a:visited{color: rgba(26, 115, 249, 1.0);}  
+
+h1{display: flex;
+margin: 10px;
+position:relative;
+padding-top: 70px;
+font-size: 40px;
+font-weight: 800;
+justify-content: center;}
+h3 {display: flex;
+position: relative;
+padding: 10px;
+font-size: 26px;
+font-weight: 600;
+}
+p{display: flex;
+position: relative;
+padding: 5px;
+font-size: 20px;
+font-weight: 400;}
+body {background-color: lightcoral;
+width: 100%;
+}
+
+/* Uses position and isplay elements to ensure proper positioning for all elements on page */
+@media screen and (max-width: 600px) {
+    nav, ul {float: none;
+    width: 100%;
+flex-direction: column;
+height: auto;
+position: relative}
+footer{float: none;
+    width: 100%;
+flex-direction: column;
+height: auto;
+position: relative}
+img{max-width: 100%;}
+}
+/* Responsive for mobile devices */
